@@ -32,7 +32,7 @@
             blandit iaculis magna posuere. Nullam egestas est ut imperdiet alique
             <br><br>
 
-            
+
             <a href="https://pt.lipsum.com/feed/html"> Link</a></p>
             <hr>
         <figure>
@@ -50,7 +50,7 @@
     </section>
     <video controls width="300px">
         <source src="video/Snapinsta.app_video_GGpliRLWU6BFeGEAAKnKBtIGelRubq_EAAAF.mp4" type="video/mp4" alt="Lagoa do Paraíso, em Jericoacoara- Ceará">
-        Seu Navegador nao suporte o Formato do Video. <a href="video/SnapInsta.io_3291234728081610357.mp4">Click Aqui Para Baixar</a>
+        Seu Navegador nao suporte o Formato do Video. <a href="video/Snapinsta.app_video_GGpliRLWU6BFeGEAAKnKBtIGelRubq_EAAAF.mp4">Click Aqui Para Baixar</a>
     </video>
     <section>
         <h2>Taxas e Serviços</h2>
@@ -95,23 +95,52 @@
     </section>
     <h2>Orçamento</h2>
     <form method="get" action="">
-        <label>Nome</label><br>
-        <input type="text" name="nome"><br><br>
+        <fieldset>
+            <label>Nome</label><br>
+            <input type="text" name="nome"><br><br>
 
-        <label>Email</label><br>
-        <input type="email" required name="email"><br><br>
+            <label>Email</label><br>
+            <input type="email" required name="email"><br><br>
 
-        <label>Data de Ida</label><br>
-        <input type="date" name="dataIda"><br><br>
+            <label>Data de Ida</label><br>
+            <input type="date" name="dataIda"><br><br>
 
-        <label>Data de Volta</label><br>
-        <input type="date" name="dataVolta"><br><br>
+            <label>Data de Volta</label><br>
+            <input type="date" name="dataVolta"><br><br>
 
-        <label>Quantidade de Pessoas</label><br>
-        <input type="number" name="qtdPessoas"><br><br>
+            <label>Quantidade de Pessoas</label><br>
+            <input type="number" name="qtdPessoas"><br><br>
 
-        <label>Senha</label><br>
-        <input type="password" name="senha"><br><br>
+        </fieldset>
+        <fieldset>        
+            <legend>Quais Serviços Deseja Contratar</legend>
+            <label><input type="checkbox" name="passagens" value="Passagens"> Compra de Passagens</label>
+
+            <label><input type="checkbox" name="hospedagem" value="Hospedagem"> Reserva de Hospedagem</label>
+
+            <label><input type="checkbox" name="veiculos" value="Veiculos">Reserva de Veiculos</label>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha a Forma de Pagamento</legend>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Cartão de Credito">Cartão de Credito
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Pix">Pix
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha o Prazo de Pagamento</legend>
+            <select name="prazoPagamento">
+                <option value="aVista" selected>Á Vista</option>
+                <option value="5x">5x Sem Juros</option>
+                <option value="10x">10x com Juros</option>
+            </select>
+        </fieldset>
 
         <label>Comentario</label><br><br>
         <textarea rows="5" name="comentario"></textarea><br><br>
