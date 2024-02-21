@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Reserva de Viagem</title>
+</head>
+<body>
+
+<h1>Formulário de Reserva de Viagem</h1>
+
+<form action="#" method="post">
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Serviços Desejados</legend>
+        <label for="servicos">Selecione os serviços desejados:</label><br>
+        <select id="servicos" name="servicos" multiple>
+            <option value="passagens">Compra de Passagens</option>
+            <option value="hospedagem">Reserva de Hospedagem</option>
+            <option value="veiculos">Aluguel de Veículos</option>
+        </select><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Forma de Pagamento</legend>
+        <label>Selecione a forma de pagamento:</label><br>
+        <input type="radio" id="cartao" name="pagamento" value="cartao">
+        <label for="cartao">Cartão de Crédito</label><br>
+        <input type="radio" id="boleto" name="pagamento" value="boleto">
+        <label for="boleto">Boleto</label><br>
+        <input type="radio" id="pix" name="pagamento" value="pix">
+        <label for="pix">PIX</label><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Prazo de Pagamento</legend>
+        <label for="prazo">Selecione o prazo de pagamento:</label><br>
+        <select id="prazo" name="prazo">
+            <option value="vista">À Vista</option>
+            <option value="cinco-vezes">Cinco Vezes Sem Juros</option>
+            <option value="dez-vezes">Dez Vezes Com Juros</option>
+        </select><br><br>
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
